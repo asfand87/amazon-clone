@@ -1,0 +1,70 @@
+.header{
+    height:60px;
+    background-color: #131921;
+    display : flex;
+    align-items: center;
+    position: sticky;
+    top:0;
+    z-index: 100;
+}
+.header__Nav{
+display: flex;
+justify-content: space-evenly;
+
+}
+.header__optionLineOne{
+    font-size : 10px;
+
+}
+
+.header__optionLineTwo{
+    font-size : 13px;
+    font-weight: 800
+}
+.header__link{
+    color: white;
+    text-decoration: none;
+}
+.header__option{
+    display:flex;
+    flex-direction: column; 
+    margin :  0 10px;
+}
+.header__logo{
+    width: 100px;  
+    margin : 18px 20px 0 20px;
+    object-fit: contain;
+}
+.header__optionBasket{
+    display: flex;
+    align-items: center;
+}
+
+.header__basketCount{
+    margin: 0 10px;
+}
+
+.header__search{
+display : flex;
+/* flex 1 is actually saying that this container can use as much as room as 
+space as it can. */
+flex:1;
+align-items: center;
+border-radius: 24px;
+}
+
+.header__searchInput{
+    height : 12px;
+    padding : 10px;
+    border : none;
+    width : 100%;
+}
+
+.header__searchIcon{
+    background-color: #cd9042;
+    padding : 5px;
+    height : 22px !important; 
+    /* so here it says !important means ignore material uis customs style and use
+    mine. */
+}
+
