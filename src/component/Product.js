@@ -28,10 +28,6 @@ function Product({id, title, image, price, rating}) {
         <strong>£{price}</strong>
         </p>
         <div className="product__rating">
-                {/* so basically following is saying that crearte an array of of 5 as rating is set to 
-                5 in home js where we are sending over the props, then fill it with empty values and we don't 
-                care what the values are and we arey denoting it by _ or we can even make it
-                unanimous function .map(() =><span>⭐</span>) */}
             {
                 Array(rating).fill(0).map((_) => <p>⭐</p> )
             }

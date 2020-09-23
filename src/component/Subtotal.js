@@ -8,8 +8,7 @@ function Subtotal() {
     const [{basket}, dispatch] = useStateValue();
     return (
         <div className="subtotal">
-        <CurrencyFormat
-        // props for it 
+        <CurrencyFormat 
         renderText={(value)=>(
             <>
                 <p>
@@ -21,7 +20,6 @@ function Subtotal() {
             </>
         )}
         decimalScale={2}
-        // this getBasketTotal function is in reducer and is called selector.
         value={getBasketTotal(basket)}
         displayType={"text"}
         thousandSeperator={true}

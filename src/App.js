@@ -18,16 +18,13 @@ const [{user}, dispatch] = useStateValue();
 // so basically this useEffect will run once when the app will be loaded but if we put 
 // basket in [] and every single time the basket will change it will run then.
 useEffect(() => {
-  // so it says get the authUser whenever the state is changing.
   const unsubscribe = auth.onAuthStateChanged((authUser)=>{
-    if(authUser){
-      // user is logged in 
+    if(authUser){ 
       dispatch({
         type: "SET_USER",
         user : authUser
       })
     }else{
-      //user is logged out.
       dispatch({
         type: "SET_USER",
         user : null,
@@ -35,7 +32,6 @@ useEffect(() => {
     }
   });
   return()=>{
-    // if any thing changes or it renders again then we have to clearn it up so unsubscribe
     unsubscribe();
   }
 }, []);
@@ -45,7 +41,6 @@ useEffect(() => {
 
 
   return (
-    // {/* we need react rooter for it so we will install this library */}
     <Router>
       <div className="App">
       <Switch>

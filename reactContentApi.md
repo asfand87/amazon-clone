@@ -40,8 +40,7 @@ then we will import our auth in app.js
   7. where it says public directory? we have to write build with it other wise it won't work.
   8. says yes. so it will say firebase initialization complete.
   9. we have to run this command then npm run build 
-  10. 
-
+  10. and last one is firebase deploy.
 
 
 
